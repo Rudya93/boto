@@ -1,0 +1,1 @@
+scp -i oRudenk.pem start.py  ubuntu@ec2-54-186-155-31.us-west-2.compute.amazonaws.com:~/
