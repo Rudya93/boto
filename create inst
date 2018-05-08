@@ -1,0 +1,9 @@
+instances = ec2.create_instances(
+	ImageId='ami-e0c19f83', 
+	MinCount=1, 
+	MaxCount=5,
+	KeyName="TestKey",
+	InstanceType="t2.micro"
+)
+for instance in instances:
+    print(instance.id, instance.instance_type)
